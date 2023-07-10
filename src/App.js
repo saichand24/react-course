@@ -5,12 +5,14 @@ import Greet from './components/Greet';
 import { render } from 'react-dom';
 import Welcome from './components/Welcome';
 import Hello from './components/Hello';
+import Message from './components/Message';
 
 class App extends Component {
   render() {
   return(
     <div className="App">
-      <Greet name="Bruce" heroName="Batman">
+      <Message />
+      {/* <Greet name="Bruce" heroName="Batman">
         <p>This is Children Prop</p>
       </Greet>
       <Greet name="Clark" heroName="Superman">
@@ -20,7 +22,7 @@ class App extends Component {
       <Welcome name="Bruce" heroName="Batman" />
       <Welcome name="Clark" heroName="Superman" />
       <Welcome name="Diana" heroName="Wonder Women" />
-      {/* <Hello /> */}
+      <Hello /> */}
     </div>
   );
 }
